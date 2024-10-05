@@ -1,6 +1,8 @@
-import React from "react";
 import Image from "next/image";
-import Search from '../assets/svg/search'
+import Search from "../assets/svg/search";
+//import { ConnectButton } from "web3uikit";
+//import { useContext } from "react";
+//import { CoinMarketContext } from "../context/context";
 
 const styles = {
 	navLink: `text-white flex mx-[10px]`,
@@ -15,55 +17,60 @@ const styles = {
 };
 
 const Header = () => {
+	//const { getQuote } = useContext(CoinMarketContext);
 	return (
 		<div className={styles.header}>
 			<Image
+				alt=""
 				src="https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_white_1.svg"
-				alt="logo"
 				width={220}
 				height={220}
 			/>
+
 			<div className={styles.headerWrapper}>
 				<nav className={styles.nav}>
 					<div className={styles.navItem}>
-						<div className={styles.navLink}>
-							Cryptocurrencies
-							<div className={styles.badge} />
-						</div>
+						<div className={styles.navLink}>Cryptocurrencies</div>
+						<div className={styles.badge} />
 					</div>
+
 					<div className={styles.navItem}>
 						<div className={styles.navLink}>Exchanges</div>
 					</div>
+
 					<div className={styles.navItem}>
-						<div className={styles.navLink}>
-							NFTs
-							<div className={styles.badge} />
-						</div>
+						<div className={styles.navLink}>NFT</div>
+						<div className={styles.badge} />
 					</div>
+
 					<div className={styles.navItem}>
-						<div className={styles.navLink}>
-							Cryptown
-							<div className={styles.badge} />
-						</div>
+						<div className={styles.navLink}>Cryptown</div>
+						<div className={styles.badge} />
 					</div>
+
 					<div className={styles.navItem}>
 						<div className={styles.navLink}>Portfolio</div>
 					</div>
+
 					<div className={styles.navItem}>
 						<div className={styles.navLink}>Watchlist</div>
 					</div>
+
 					<div className={styles.navItem}>
 						<div className={styles.navLink}>Products</div>
+						<div className={styles.badge} />
 					</div>
+
 					<div className={styles.navItem}>
 						<div className={styles.navLink}>Learn</div>
 					</div>
 				</nav>
-				<div className="flex-items-center">
-					{/*<Connect Button />*/} 
+
+				<div className="flex items-center">
+					{/*<ConnectButton />*/}
 					<div className={styles.inputContainer}>
 						<Search />
-						<input className={styles.input} placeholder='Search' /> 
+						<input className={styles.input} placeholder="Search" />
 					</div>
 				</div>
 			</div>
