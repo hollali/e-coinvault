@@ -1,5 +1,3 @@
-Here's a detailed example of a README file for your cryptocurrency exchange and market project. It covers an overview, installation steps, usage instructions, and additional notes. You can adapt this template to suit your project's specific features and details.
-
 ---
 
 # Cryptocurrency Exchange & Market
