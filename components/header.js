@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Search from '../assets/svg/search'
 
 const styles = {
 	navLink: `text-white flex mx-[10px]`,
@@ -23,7 +24,7 @@ const Header = () => {
 				height={220}
 			/>
 			<div className={styles.headerWrapper}>
-				<div className={styles.nav}>
+				<nav className={styles.nav}>
 					<div className={styles.navItem}>
 						<div className={styles.navLink}>
 							Cryptocurrencies
@@ -38,6 +39,31 @@ const Header = () => {
 							NFTs
 							<div className={styles.badge} />
 						</div>
+					</div>
+					<div className={styles.navItem}>
+						<div className={styles.navLink}>
+							Cryptown
+							<div className={styles.badge} />
+						</div>
+					</div>
+					<div className={styles.navItem}>
+						<div className={styles.navLink}>Portfolio</div>
+					</div>
+					<div className={styles.navItem}>
+						<div className={styles.navLink}>Watchlist</div>
+					</div>
+					<div className={styles.navItem}>
+						<div className={styles.navLink}>Products</div>
+					</div>
+					<div className={styles.navItem}>
+						<div className={styles.navLink}>Learn</div>
+					</div>
+				</nav>
+				<div className="flex-items-center">
+					{/*<Connect Button />*/} 
+					<div className={styles.inputContainer}>
+						<Search />
+						<input className={styles.input} placeholder='Search' /> 
 					</div>
 				</div>
 			</div>
