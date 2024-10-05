@@ -42,7 +42,7 @@ Welcome to the **Cryptocurrency Exchange & Market** project! This platform enabl
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/crypto-exchange-main.git
+    git clone https://github.com/hollali/e-coinvault.git
     cd crypto-exchange-main
     ```
 
