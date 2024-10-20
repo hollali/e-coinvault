@@ -16,7 +16,8 @@ const styles = {
 	cursorPointer: `mr-5 cursor-pointer`,
 };
 
-const Header = () => {
+const Header = (props) => {
+	const {address, isConnected, connect} = props;
 	//const { getQuote } = useContext(CoinMarketContext);
 	return (
 		<div className={styles.header}>
@@ -67,6 +68,11 @@ const Header = () => {
 				</nav>
 
 				<div className="flex items-center">
+					<div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={connect}>
+						{isConnected
+							? address.slice(0, 4) + "..." + address.slice(38)
+							: "Connect"}
+					</div>
 					{/*<ConnectButton />*/}
 					<div className={styles.inputContainer}>
 						<Search />
