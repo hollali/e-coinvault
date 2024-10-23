@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Search from "../assets/svg/search";
 //import { ConnectButton } from "web3uikit";
@@ -16,8 +17,7 @@ const styles = {
 	cursorPointer: `mr-5 cursor-pointer`,
 };
 
-const Header = (props) => {
-	const {address, isConnected, connect} = props;
+const Header = () => {
 	//const { getQuote } = useContext(CoinMarketContext);
 	return (
 		<div className={styles.header}>
@@ -27,7 +27,6 @@ const Header = (props) => {
 				width={220}
 				height={220}
 			/>
-
 			<div className={styles.headerWrapper}>
 				<nav className={styles.nav}>
 					<div className={styles.navItem}>
@@ -61,18 +60,11 @@ const Header = (props) => {
 						<div className={styles.navLink}>Products</div>
 						<div className={styles.badge} />
 					</div>
-
 					<div className={styles.navItem}>
 						<div className={styles.navLink}>Learn</div>
 					</div>
 				</nav>
-
 				<div className="flex items-center">
-					<div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={connect}>
-						{isConnected
-							? address.slice(0, 4) + "..." + address.slice(38)
-							: "Connect"}
-					</div>
 					{/*<ConnectButton />*/}
 					<div className={styles.inputContainer}>
 						<Search />
