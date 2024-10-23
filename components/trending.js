@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import fire from "../assets/fire.png";
 import btc from "../assets/btc.png";
 import usdt from "../assets/usdt.png";
-//import gainers from "../assets/gainers.png";
-//import recent from "../assets/recent.png";
+import gainers from "../assets/gainers.png";
+import recent from "../assets/recent.png";
 import ReactSwitch from "react-switch";
 import Rate from "../components/cmc-table/rate"
 import TrendingCard from "./trendingCard"
@@ -69,9 +69,9 @@ const Trending = () => {
                 <div className={styles.flexCenter}>
                     <TrendingCard title = 'Trending' icon={fire}
                     trendingData = {trendingData}/>
-                    <TrendingCard title = 'Biggest Gainers' icon={fire}
+                    <TrendingCard title = 'Biggest Gainers' icon={gainers}
                     trendingData = {trendingData}/>
-                    <TrendingCard title = 'Recently Added' icon={fire}
+                    <TrendingCard title = 'Recently Added' icon={recent}
                     trendingData = {trendingData}/>
                 </div>
 			</div>
