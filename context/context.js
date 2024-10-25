@@ -19,7 +19,7 @@ export const CoinMarketProvider = ({ children }) => {
   const { isAuthenticated, user, Moralis } = useMoralis()
   const {
     data: coins,
-    error,
+    //error,
     isLoading: loadingCoins,
   } = useMoralisQuery('Coins')
 

@@ -1,6 +1,7 @@
 //import type { NextPage } from "next"
 import Header from "../components/header";
 import Trending from "../components/trending";
+import CMCTable from'../components/cmc-table/cmcTable'
 export default function Home() {
 	return (
 		<div className="min-h-screen">
@@ -8,7 +9,7 @@ export default function Home() {
 			<div className="mt-10" />
 			<Trending />
 			<div className="mt-20" />
-			{/*<CMC table />*/}
+			<CMCTable />
 		</div>
 	);
 }
