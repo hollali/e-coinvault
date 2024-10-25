@@ -1,4 +1,3 @@
-//import type { NextPage } from "next"
 import Header from "../components/header";
 import Trending from "../components/trending";
 import CMCTable from'../components/cmc-table/cmcTable'
