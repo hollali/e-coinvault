@@ -1,3 +1,4 @@
+"use client"
 import "../styles/globals.css";
 import { MoralisProvider } from "@moralisweb3/next";
 import { GunProvider } from "../context/gunContext";
