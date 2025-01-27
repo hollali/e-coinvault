@@ -19,7 +19,6 @@ const TrendingCard = ({ icon, title, trendingData }) => {
 				<MoreButton />
 			</div>
 			<br />
-
 			{trendingData.map((item, index) => {
 				return (
 					<TrendingCardRow
