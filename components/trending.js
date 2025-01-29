@@ -61,7 +61,6 @@ const Trending = () => {
 						/>
 					</div>
 				</div>
-
 				{/* Market Cap Section */}
 				<div className="mt-4 text-sm sm:text-base flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
 					<p className="text-gray-400">
