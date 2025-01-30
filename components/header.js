@@ -49,7 +49,7 @@ const Header = () => {
 						<div className={styles.navLink}>Exchanges</div>
 					</div>
 					<div className={styles.navItem}>
-						<div className={styles.navLink}>NFT</div>
+						<div className={styles.navLink}>NFT&apos;s </div>
 						<div className={styles.badge} />
 					</div>
 					<div className={styles.navItem}>
